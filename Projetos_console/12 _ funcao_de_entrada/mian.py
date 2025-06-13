@@ -8,3 +8,4 @@ print(f"Texto em maiuscula :{minuscula}.")
 
 maiuscula = input("Digite um texto totalmente em caixa alta :").lower()
 print(f"Texto em minusculo:{maiuscula}.")
+
