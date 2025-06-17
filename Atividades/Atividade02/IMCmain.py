@@ -15,25 +15,56 @@ Caso o imc seja menor que IMC >= 40: Obesidade nivel 2
 
 
 '''
-
-peso = float(input('Informe seu peso em kg: ').replace(",","."))
-altura = float(input('Informe sua altura em metros: ').replace(",","."))
-imc = peso / (altura ** 2)
-if imc < 18.5:
-    status = "Abaixo do peso"
-    print(f"Seu IMC é {imc:.2f}. Status: {status}")
-elif 18.5 <= imc < 25:
-    status = "Peso ideal"
-    print(f"Seu IMC é {imc:.2f}. Status: {status}")
-elif 25 <= imc < 30:
-    status = "Acima do peso"
-    print(f"Seu IMC é {imc:.2f}. Status: {status}")
-elif 30 <= imc < 35:
-    status = "Obeso"
-    print(f"Seu IMC é {imc:.2f}. Status: {status}")     
-elif 35 <= imc < 40:
-    status = "Obesidade nível 2"
-    print(f"Seu IMC é {imc:.2f}. Status: {status}")
-elif imc >= 40:
-    status = "Obesidade mórbida"
-    print(f"Seu IMC é {imc:.2f}. Status: {status}")
+while True:
+    
+    try:
+            nome = input("Informe seu nome:").title().strip()
+            peso = float(input('Informe seu peso em kg: ').replace(",","."))
+            altura = float(input('Informe sua altura em metros: ').replace(",","."))
+            
+            imc = peso / (altura ** 2)
+            
+            print(f"O valordo IMC de{nome} é {imc:.2f}")
+            if imc < 18.5:
+                status = "Abaixo do peso"
+                print(f"{nome} esta abaixo do peso.")
+            elif 18.5 <= imc < 25:
+                status = "Peso ideal"
+                print(f"{nome} esta no peso.")
+            elif 25 <= imc < 30:
+                status = "Acima do peso"
+                print(f"{nome} esta acima do peso.")
+            elif 30 <= imc < 35:
+                status = "Obeso"
+                print(f"{nome} esta obeso.")     
+            elif 35 <= imc < 40:
+                status = "Obesidade nível 2"
+                print(f"{nome} esta Obesidade nível 2.")
+            elif imc >= 40:
+                status = "Obesidade mórbida"
+                print(f"{nome} esta Obesidade mórbida.")
+                
+                
+                
+            while True:
+                prosseguir = input("Deseja refazer? (s/n)").lower().strip()
+                if prosseguir == "s" or prosseguir == "n":
+                    break
+                else:
+                    print ("opção invalida") 
+                    continue  
+            match prosseguir:
+                case"s":
+                    continue
+                case "n":
+                    break
+                
+            
+    except Exception as e:
+        print(f"Não foi possivel calcular o IMC. {e}.")
+        continue
+        
+        # o que faltou try de tratamento de excesao , e depois um em caso de erro
+        # exxe em caso de erro e o except
+        # faltou o arredondamento print(f"O valordo IMC de{nome} é {imc:.2f}")
+        

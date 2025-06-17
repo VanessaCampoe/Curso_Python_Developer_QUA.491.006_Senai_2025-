@@ -5,6 +5,8 @@ Crie um programa que receba do usuario o valor de etanal e da gasolina, em reais
 #NOTE - oompensa etanol caso ele tenha mais de 70% do valor da gasolina.
 #NOTE - Divirtam-se!!! =D
 '''
+#  começa com try 
+ #começa com tratamento de exceçao 
 
 gasolina = float(input('Informe o valor da gasolina: '))
 etanol = float(input('Informe o valor do etanol: '))
