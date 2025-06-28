@@ -90,38 +90,4 @@ while True :
     
     
     
-    
-    if opcao == "1":
-        nome = input("Informe o nome: ").title().strip()
-        nomes.append(nome)
-        print("Nome cadastrado com sucesso.")
-    elif opcao == "2":
-        print("Lista de nomes:")
-        for n in nomes:
-            print("-", n)
-    elif opcao == "3":
-        nome = input("Informe o nome a ser pesquisado: ").title().strip()
-        if nome in nomes:
-            print("Nome encontrado.")
-        else:
-            print("Nome não encontrado.")
-    elif opcao == "4":
-        nome = input("Informe o nome a ser alterado: ").title().strip()
-        if nome in nomes:
-            novo_nome = input("Informe o novo nome: ").title().strip()
-            nomes[nomes.index(nome)] = novo_nome
-            print("Nome alterado com sucesso.")
-        else:
-            print("Nome não encontrado.")
-    elif opcao == "5":
-        nome = input("Informe o nome a ser excluído: ").title().strip()
-        if nome in nomes:
-            nomes.remove(nome)
-            print("Nome excluído com sucesso.")
-        else:
-            print("Nome não encontrado.")
-    elif opcao == "6":
-        print("Saindo...")
-        break
-    else:
-        print("Opção inválida.")
+   
