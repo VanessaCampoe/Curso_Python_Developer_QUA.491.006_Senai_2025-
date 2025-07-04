@@ -1,0 +1,18 @@
+// objeto  = {
+//      'nome': "Alex",
+//         'idade': 40
+
+// se fosseem JS 
+// }
+
+
+[
+    {
+        "nome": "Alex",
+        "idade": 40,
+        "profissao": "Programador",
+        "email": "alex@example.com"
+    }
+]
+
+
