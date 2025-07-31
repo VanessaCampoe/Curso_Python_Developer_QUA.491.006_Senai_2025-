@@ -5,6 +5,8 @@
 # Programa que calcula a sequência de Fibonacci
 
 # Recebe um número inteiro do usuário
+#primeira definição ()do número de termos da sequência
+
 n = int(input("Digite um número inteiro (número de termos da sequência de Fibonacci): "))
 
 # Verifica se o número é válido
