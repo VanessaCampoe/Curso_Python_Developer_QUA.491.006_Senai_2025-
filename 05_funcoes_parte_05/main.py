@@ -16,10 +16,11 @@ if __name__ == "__main__":
                 try:
                     a = float(input('Digite o valor de a: ').replace(',', '.'))
                     b = float(input('Digite o valor de b: ').replace(',', '.'))
-                    mo.limpar()
+                    mo.limpar_tela()
                     
                     x = mo.primeiro_grau(a, b)
-                    print(f'O  valor de x é : {x}.')
+                    print(f"o valor de x é: {x}")
+                    
                 except Exception as e:
                     print(f'Erro: {e}')
 
@@ -33,8 +34,10 @@ if __name__ == "__main__":
                     a = float(input('Digite o valor de a: '))
                     b = float(input('Digite o valor de b: '))
                     c = float(input('Digite o valor de c: '))
-                    mo.limpar()
+                    mo.limpar_tela()
                     x = mo.segundo_grau(a, b, c)
+                    for result in x:
+                        print(f'{result}.')
                     #print(f"{x}.")
                 except Exception as e:
                         print(f'Erro: {e}')
@@ -51,7 +54,7 @@ if __name__ == "__main__":
                 break 
             case _:
                 
-                ...
+                
                 print('Opcao invalida. Tente novamente.')
                 continue
             

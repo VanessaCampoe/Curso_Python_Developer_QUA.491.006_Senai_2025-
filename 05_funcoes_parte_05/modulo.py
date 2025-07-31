@@ -32,4 +32,6 @@ def segundo_grau(a, b, c):
     else: 
             yield primeiro_grau(b, c)
             
+            
+            #  yield retorno de uma funçao e, lista e ele para a funçai 
       
