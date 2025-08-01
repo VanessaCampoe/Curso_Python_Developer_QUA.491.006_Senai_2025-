@@ -19,3 +19,4 @@ else:
         print(a, end=' ')
         a, b = b, a + b
 
+#  o ero maior e fazer a função ena proxima fazer modulo e função 
