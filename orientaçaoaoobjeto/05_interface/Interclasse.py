@@ -89,7 +89,7 @@ class ContaCorrente(Conta):
     def sacar(self, valor):
         self.saldo -= valor
         return self.saldo
-        # integridade e disponibilidades 
+        # integridade e disponibilidades e integridade de dados
 
 
 
