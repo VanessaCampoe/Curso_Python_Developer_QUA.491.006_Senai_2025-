@@ -11,3 +11,6 @@ class Pessoa:
     endereco: str
     
     #  pyt abstrada e interface no pythom e a mesma coisa
+    @abstractmetho
+    def __str__(self):
+        pass
