@@ -1,4 +1,4 @@
-instalar biblioteca flet
+einstalar biblioteca flet
 pip install flet
 
 criar projeto
@@ -13,7 +13,7 @@ flet run --web 01_primeiro_app_flet     ## "nome do projeto"
 # criar programa executavel , com icone
 flet pack 05_imc/src/main.py --name=app_imc --icon 05_imc/src/assets/1.png
 
-
+documentação 
 
 
 =================================
