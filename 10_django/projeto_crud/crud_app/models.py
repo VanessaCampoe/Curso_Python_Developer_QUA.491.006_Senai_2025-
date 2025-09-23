@@ -1,12 +1,12 @@
-from django.db import models
+from django.db import models # type:ignore
 
 # Create your models here.
-#  vamos manter esse import como esta aquimsem nenhum pb 
+class Pessoa(models.Model):
+    id_pessoa = models.AutoField(primary_key=True)  # auto incremento
+    nome = models.CharField(max_length=255, null=False, blank=False) # Campo obrigatorio, não vázio
+    email = models.EmailField(unique=True, null=False, blank=False)  # Campo unico - não repetido e não vazio
+    cpf = models.CharField(max_length=14,unique=True,null=True, blank=True)
 
-
-class Pessoa(models.Model):  # Moldel e a class da importação models
-    id_pessoa = models.AutoField(primary_key=True)
-    nome = models.CharField(max_length=255, null=False, blank=False) # max_length ele e espanssivo e economiza espaço 
-    email = models.EmailField(unique=True, null=False, blank=False) # unique campoe em branco ... null=False, blank=False)
-    cpf = models.CharField(max_length=14,unique=True, null=True, blank=True)           #// equivalente ao varchar 
-   
+    # server para mostrar o nome correto na pagina de admin, ao invéz de mostrar o nome da classe
+    def __str__(self):
+        return self.nome

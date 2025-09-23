@@ -1,0 +1,114 @@
+criar vn 
+
+ativar venv
+.venv\Scripts\activate 
+
+
+fazer instalar
+pip install django
+
+
+
+criar pasta
+django-admin startproject projeto_crud
+
+setings sig configurações 
+
+
+devo entrar na pasta original crud 
+como saber se nao estou na segunda pasta crud 
+vou ser projeto cru projeto crud 
+
+
+// com isso ele vai gerar o banco // rodando localmente
+python manage.py runserver
+aqui vou abir o navegador e ver o servidor django esta funcionando 
+
+aqui e de qualque local host 
+http://127.0.0.1:8000/
+http://localhost:8000/
+e assim descubro q o django ets funcionando 
+se no java funciona assim se te um locla padrao  q esse sera o spring 
+vai mostrar o foguete 
+
+
+/// pag de administração de projeto 
+para chegar qui basta colocar admin na frente de http://localhost:8000/
+http://localhost:8000/admin/login/?next=/admin/
+
+entao devo sim criar um adin para acessar as configurações e criar ..... grv
+devo fechar o servidor com crt c 
+voltando para linha de comando primaria tenho a ceteza de que fechou o servidor 
+criando uma aplicação cru app  /// esse sera sempre  o ocmando para isso ... ..v python manage.py 
+um projeto pode ter mais de uma aplicação
+
+ toda vez q eu for criar uma aplicaçao python manage.py startapp 
+ e lembrnado q eu crei e ele cria mais uma igual 
+
+
+ os model mais urgentes seram os models e app pq aqui ficar ao banco de dados 
+
+ agora vamos criar o super usuario , mas antes vamos 
+ pq aqui rtemos ter ao menos uma aplicação 
+ fazer uma upgracha
+
+
+
+python manage.py migrate
+ ele cria tabela padroes 
+ f1 opem data base
+ depois seleciona o crud e depois no canto vai abrir as tabelas q ele fez automaticamente 
+ em sqlite explore 
+
+
+ /////python manage.py createsuperuser
+ vai criar o super usuario
+
+na senha coloquei i adimin
+
+
+ ;;; depois rodar o sevidor 
+  python manage.py runserver
+==================================
+vamos falr de model
+mvc = model-view-controller
+mvt = model-view-templete
+aqui vamos fazer a model e view pa a controller funciona mais ou menos sozinha 
+
+ pasta do aplicativo crud app 
+ doatas as pastas do banco seram criadas dentro desse arquivo 
+ aqui vams abri a model  q esta dentro de crud app 
+
+
+ vamos na pasta setings q esta dentro de projeto crud 
+ e acrecentei dentro linha 40  ententa aque aqui e feita toda a instalação INSTALLED_APPS = 
+... 'crud_app' 
+ e depois vou fazer o python manage.py makemigrations
+ python manage.py migrate  
+
+  todo vez q eu abrir ao arquivo devo dar f1  e start no meu banco de dado 
+  para funcionar e ver meu banco sk lite 
+
+  ... sugunda aula vamos fazer um alter tabe 
+  entrar na pasta e pelo terminal  na pasta ariz do projeto 
+  para entrar na pasta 
+  cd projeto_crud
+
+o alter e feito primeiro na class dificil e fazer ele no banco 
+ qualquer alteração que fizer nobanco tem que ser python manage.py makemigrations
+  ele prepara as altaeracoes para rodas no migrate
+
+cd.. para sair da pasta e depois entrar novamente 
+cd projeto_crud
+
+python manage.py migrate
+
+;;;;;;;;;;;;;;;;;;;;;; para abrir o servidor 
+http://127.0.0.1:8000/admin/login/?next=/admin/
+
+/adimin
+senha 
+admin
+adimin
+
+http://127.0.0.1:8000/admin/
